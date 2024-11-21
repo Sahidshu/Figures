@@ -4,6 +4,9 @@
 
 package espoch.edu.ec.geometricfigures;
 
+import espoch.edu.ec.geometricfigures.classes.Rectangle;
+
+
 /**
  *
  * @author sahid
@@ -11,6 +14,21 @@ package espoch.edu.ec.geometricfigures;
 public class GeometricFigures {
 
     public static void main(String[] args) {
+       Rectangle objRectangle = new Rectangle();
+       objRectangle.baseR=18;
+       objRectangle.heightR=12; 
+       
+       double calArearec=objRectangle.rectangleArea();
+        System.out.println(" "+"El area del rectangulo es: "+calArearec+" cm cuadrados");
+       
+       double recPerimeter=objRectangle.rectanglePerimeter();
+        System.out.println("El perimetro del rectangulo es: "+recPerimeter+" cm");
         
+       //double calcHypo=
     }
+    
+    
+   
+        
+    
 }

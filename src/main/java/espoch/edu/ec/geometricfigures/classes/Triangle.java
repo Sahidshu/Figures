@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package espoch.edu.ec.figuressahidmunoz.classes;
+package espoch.edu.ec.geometricfigures.classes;
 
 /**
  *
@@ -13,7 +13,7 @@ public class Triangle {
     public double heightT;
     
     public double hypotenuse(){
-        double calcHypo = (baseT*baseT)+(heightT*heightT);
+        double calcHypo = Math.sqrt((baseT*baseT)+(heightT*heightT));
         return calcHypo;   
     }
 }
