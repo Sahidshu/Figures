@@ -11,19 +11,30 @@ public class Triangle {
     public double heightT;
    
     
+    public double triangleArea(){
+        double triArea=(baseT*heightT)/2;
+        return triArea;
+    }
+    
     
     public double hypotenuse(){
         double calcHypo = Math.sqrt((baseT*baseT)+(heightT*heightT));
         return calcHypo;   
     }
     
+    public double trianglePerimeter(){
+        double triPer=baseT+heightT+hypotenuse();
+        return triPer;
+    }
+    
     public TriangleType identifyTriangle(){
         double calcHypo=hypotenuse();
         
-        if (heightT == baseT && baseT == calcHypo) {
+     
+        if (baseT == heightT && baseT == calcHypo) {
             return TriangleType.EQUILATERAL;
-        } else if (heightT == baseT || heightT == calcHypo || baseT == calcHypo) {
-            return TriangleType.ISOCELES;
+        } else if (baseT == heightT || baseT == calcHypo || heightT == calcHypo) {
+            return TriangleType.ISOSCELES;
         } else {
             return TriangleType.SCALENE;
         }

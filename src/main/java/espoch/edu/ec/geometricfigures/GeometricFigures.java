@@ -1,6 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
 
 package espoch.edu.ec.geometricfigures;
 
@@ -11,10 +8,7 @@ import espoch.edu.ec.geometricfigures.classes.Triangle;
 import espoch.edu.ec.geometricfigures.classes.TriangleType;
 
 
-/**
- *
- * @author sahid
- */
+
 public class GeometricFigures {
     
     public static void main(String[] args) {
@@ -36,11 +30,17 @@ public class GeometricFigures {
 //CALCULO DE LA HIPOTENUS DE UN TRIANGULO
 
        Triangle objTriangle=new Triangle();
-       objTriangle.baseT=3;
-       objTriangle.heightT=4;
-       
-       double calcHypo=objTriangle.hypotenuse();
+       objTriangle.baseT=10;
+       objTriangle.heightT=20;
+                
+        double calcHypo=objTriangle.hypotenuse();
         System.out.println("La hipotenusa del triangulo es: "+calcHypo+" cm");
+        
+        double triArea=objTriangle.triangleArea();
+        System.out.println("El area del triangulo es: "+triArea);
+        
+        double triPer=objTriangle.trianglePerimeter();
+        System.out.println("El perimetro del triangulo es: "+triPer);
         
         TriangleType type = objTriangle.identifyTriangle();
         System.out.println("El tipo de triangulo es: " + type);
